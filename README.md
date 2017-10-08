@@ -32,4 +32,7 @@ onPause() -> PAUSE -> onResume()
 
 4. "An Intent is a messaging object [...]" [https://developer.android.com/...]. Can be used to start Activity, Services or deliver a broadcast. Explicit Intents have to specify the components by name (e.g. class name) and are used inside the own application. Implicit Intents declare general actions to be performed.
 5. a) false, b) false???, c) true, d) true??
-6. 
+6.
+```xml
+<service android:name=".ExampleService" />
+```
