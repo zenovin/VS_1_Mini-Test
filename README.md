@@ -20,7 +20,7 @@ Write a small code snippet to show how to perform the following tasks
   sensorMgr.registerListener(this, sensor, SensorManager.SENSOR_DELAY_FASTEST);
   ```
   
-  * Logging data can take some time so that it will "block" the method from be called again. Also the reference to event.values might cause some problem. It would be better to copy the data quickly and let a runnable do the logging.
+  * Logging data can take some time so that it will "block" the method from being called again. Also the reference to event.values might cause some problems if the object gets changed in log. It would be better to copy the data quickly and let a runnable do the logging.
   
 2. 
 ```
@@ -30,7 +30,7 @@ onPause() or onCreate() -> PAUSED -> onResume() or onStop()
 onStop() -> STOPPED -> onDestroy() or ( onStart() -> onResume() ) or ( onCreate() -> onStart() -> onResume() )
 
 ```
-3. String values should be defined in a xml file. This offers multiple use of one value (easy to change) and also easier multilanguage support.
+3. String values should be defined in a xml file. This offers multiple uses of one value (easy to change) and also easier multilanguage support.
 
 4. "An Intent is a messaging object [...]" [https://developer.android.com/...]. Can be used to start Activity, Services or deliver a broadcast. Explicit Intents have to specify the components by name (e.g. class name) and are used inside the own application. Implicit Intents declare general actions to be performed.
 5. a) false, b) false, c) true, d) false
