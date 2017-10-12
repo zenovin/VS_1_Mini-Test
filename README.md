@@ -27,7 +27,7 @@ Write a small code snippet to show how to perform the following tasks
 RUNNING, PAUSED, STOPPED
 onResume() -> RUNNING -> onPause()
 onPause() or onCreate() -> PAUSED -> onResume() or onStop()
-onStop() -> STOPPED -> onDestroy() or onResume()
+onStop() -> STOPPED -> onDestroy() or ( onStart() -> onResume() ) or ( onCreate() -> onStart() -> onResume() )
 
 ```
 3. String values should be defined in a xml file. This offers multiple use of one value (easy to change) and also easier multilanguage support.
