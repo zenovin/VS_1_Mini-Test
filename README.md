@@ -33,7 +33,7 @@ onStop() -> STOPPED -> onDestroy() or onResume()
 3. String values should be defined in a xml file. This offers multiple use of one value (easy to change) and also easier multilanguage support.
 
 4. "An Intent is a messaging object [...]" [https://developer.android.com/...]. Can be used to start Activity, Services or deliver a broadcast. Explicit Intents have to specify the components by name (e.g. class name) and are used inside the own application. Implicit Intents declare general actions to be performed.
-5. a) false, b) false???, c) true, d) false
+5. a) false, b) false, c) true, d) false
 6.
 ```xml
 <service android:name=".ExampleService" />
