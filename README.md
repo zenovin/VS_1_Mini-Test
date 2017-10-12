@@ -36,7 +36,7 @@ onStop() -> STOPPED -> onDestroy() or onResume()
 5. a) false, b) false, c) true, d) false
 6.
 ```xml
-<service android:name=".ExampleService" />
+<service android:name=".LocationService" />
 
 <uses-permission android:name="android.permission.SEND_SMS"/>
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
